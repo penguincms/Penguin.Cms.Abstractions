@@ -3,6 +3,9 @@ Penguin.Cms.Core
 Penguin.Cms.Email
 Penguin.Cms.Email.Templating
 Penguin.Cms.Forms
+Penguin.Cms.Modules.Auditing
+Penguin.Cms.Modules.Core
+Penguin.Cms.Modules.Pages
 Penguin.Cms.Navigation
 Penguin.Cms.Security
 Penguin.Cms.Web
