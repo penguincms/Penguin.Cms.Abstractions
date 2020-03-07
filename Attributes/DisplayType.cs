@@ -19,7 +19,7 @@ namespace Penguin.Cms.Abstractions.Attributes
         /// <param name="name">The full name of the type to render this property as</param>
         public DisplayTypeAttribute(string name)
         {
-            Name = name;
+            this.Name = name;
         }
     }
 }
