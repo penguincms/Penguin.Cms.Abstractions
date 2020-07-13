@@ -3,7 +3,7 @@
 namespace Penguin.Cms.Abstractions.Interfaces
 {
     /// <summary>
-    /// Generates default entities of a specifit type
+    /// Generates default entities of a specific type
     /// </summary>
     /// <typeparam name="T">The type this generator creates</typeparam>
     public interface IGenerateDefaultEntities<T> : IGenerateDefaultEntities
