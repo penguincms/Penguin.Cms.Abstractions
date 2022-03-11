@@ -10,7 +10,7 @@
     <DocumentationFile>Penguin.Cms.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.DependencyInjection.Abstractions" Version="5.0.6-TAHULSY" />
-    <PackageReference Include="Penguin.Persistence.Abstractions" Version="5.0.6-TAHULSY" />
+    <PackageReference Include="Penguin.DependencyInjection.Abstractions" Version="5.0.6-TATDFB4" />
+    <PackageReference Include="Penguin.Persistence.Abstractions" Version="5.0.6-TATDFB4" />
   </ItemGroup>
 </Project>
