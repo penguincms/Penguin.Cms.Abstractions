@@ -42,7 +42,9 @@ namespace Penguin.Cms.Abstractions.Attributes
         }
 
         public string Controller { get; }
+
         public string Action { get; }
+
         public string Area { get; }
     }
 }
