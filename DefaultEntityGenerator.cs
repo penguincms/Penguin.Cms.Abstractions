@@ -18,7 +18,7 @@ namespace Penguin.Cms.Abstractions
 
         IEnumerable IGenerateDefaultEntities.Generate()
         {
-            foreach (object o in this.Generate())
+            foreach (object o in Generate())
             {
                 yield return o;
             }

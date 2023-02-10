@@ -13,7 +13,7 @@ namespace Penguin.Cms.Abstractions.Attributes
         /// <summary>
         /// The DisplayContext that this route applies to
         /// </summary>
-        public DisplayContexts Context { get; set; }
+        public DisplayContexts Context { get; internal set; }
 
         /// <summary>
         /// The object dictionary representing the passed in route values
@@ -30,7 +30,7 @@ namespace Penguin.Cms.Abstractions.Attributes
         /// <param name="namespace">The namespace the controller resides in</param>
         public CustomRouteAttribute(DisplayContexts context, string controller, string action, string area = "", string @namespace = "")
         {
-            this.RouteValues = new Dictionary<string, object>
+            RouteValues = new Dictionary<string, object>
             {
                 { "controller", controller },
                 { "action", action },
@@ -38,7 +38,11 @@ namespace Penguin.Cms.Abstractions.Attributes
                 { "namespace", @namespace }
             };
 
-            this.Context = context;
+            Context = context;
         }
+
+        public string Controller { get; }
+        public string Action { get; }
+        public string Area { get; }
     }
 }

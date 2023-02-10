@@ -6,12 +6,12 @@ namespace Penguin.Cms.Abstractions.Attributes
     /// Specifies that during dynamic display, this property should be treated as a different type
     /// </summary>
     [AttributeUsage(AttributeTargets.Property)]
-    public class DisplayTypeAttribute : Attribute
+    public sealed class DisplayTypeAttribute : Attribute
     {
         /// <summary>
         /// The FullName of the type to treat this property as
         /// </summary>
-        public string Name { get; set; }
+        public string Name { get; internal set; }
 
         /// <summary>
         /// Creates a new instance of this attribute
@@ -19,7 +19,7 @@ namespace Penguin.Cms.Abstractions.Attributes
         /// <param name="name">The full name of the type to render this property as</param>
         public DisplayTypeAttribute(string name)
         {
-            this.Name = name;
+            Name = name;
         }
     }
 }

@@ -8,8 +8,8 @@
 
         public Macro(string displayGroup, string displayName)
         {
-            this.DisplayGroup = displayGroup;
-            this.DisplayName = displayName;
+            DisplayGroup = displayGroup;
+            DisplayName = displayName;
         }
     }
 }
